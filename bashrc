@@ -29,7 +29,7 @@ check_logs_for() {
     
     #'[app name]-app'
     app_name="$1"
-    ssh "$server_name"@"$server_ip" docker logs "$app_name" > "$logs_location"${app_name}_logs
+    ssh "$server_name"@"$server_ip" docker logs "$app_name" > "$logs_location"${app_name}_logs && less "$logs_location"${app_name}_logs
 }
 ### ###
 
