@@ -58,7 +58,7 @@ alias codenvim='terminator -l neovim'
 readnvim() {
     terminator -l light_reading -e "neovim -u /home/jagdcake/.config/nvim/reader.vim $1"
 }
-# the vim commands don't work because terminator thinks they are a part the parameters 
+# the vim commands don't work because terminator thinks they are a part of the parameters 
 # webnvim() {
     # terminator -l light_reading -e "nvim -u ~/.config/nvim/reader.vim +'r !w3m -dump $1' +'call FixLinebreaks()'"
 # }
