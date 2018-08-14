@@ -86,10 +86,40 @@ toggle_icons() {
     fi
 }
 weather() {
-    echo "The time is: $(date +%T)"
-    echo "Current topside temperature is: $(curl -s 'https://www.sinoptik.bg/vidin-bulgaria-100725905' | rg wfCurrentTemp | rg -o -e '\d{2}')°C" 
-    echo "With an estimated high of: $(curl -s 'https://www.sinoptik.bg/vidin-bulgaria-100725905?location' | rg 'Максимална температура' | head -n 1 | rg -o -e '\d{2}')°C"
-    echo "The humidity is at: $(curl -s 'https://www.sinoptik.bg/vidin-bulgaria-100725905' | rg wfCurrentValue | rg -o -e '\d{2}%')"
+    log_file=~/Desktop/weather_log
+
+    time_now="$(date +%T)"
+    date="$(date "+%d %b %Y")"
+    url='https://www.sinoptik.bg/vidin-bulgaria-100725905'
+    current_temp="$(curl -s "$url" | rg wfCurrentTemp | rg -o -e '\d{2}')"
+    max_temp="$(curl -s "$url" | rg 'Максимална температура' | head -n 1 | rg -o -e '\d{2}')"
+    humidity="$(curl -s "$url" | rg wfCurrentValue | rg -o -e '\d{2}%' | rg -o -e '\d{2}')"
+
+    if [[ "$current_temp" -gt 30 && "$humidity" -ge 80 ]]; then
+        what='hell'
+    elif [[ "$current_temp" -gt 30 ]]; then
+        what='hot'
+    elif [[ "$current_temp" -le 30 ]]; then
+        what='hot-ish'
+    elif [[ "$current_temp" -le 25 ]]; then
+        what='warm'
+    elif [[ "$current_temp" -le 20 ]]; then
+        what='nice'
+    elif [[ "$current_temp" -le 13 ]]; then
+        what='cold-ish'
+    elif [[ "$current_temp" -le 7 ]]; then
+        what='cold'
+    else
+        what='very cold'
+    fi
+
+    echo "It's "$what"" | tee -a "$log_file"
+    echo "Today is: "$date"" | tee -a "$log_file"
+    echo "The time is: "$time_now"" | tee -a "$log_file"
+    echo "Current topside temperature is: "$current_temp"°C" | tee -a "$log_file"
+    echo "With an estimated high of: "$max_temp"°C" | tee -a "$log_file"
+    echo "The humidity is at: "$humidity"%" | tee -a "$log_file"
+    echo | tee -a "$log_file"
 }
 alias radio1='mpv http://stream.metacast.eu/radio1.opus'
 download() {
