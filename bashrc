@@ -97,29 +97,29 @@ weather() {
 
     if [[ "$current_temp" -gt 30 && "$humidity" -ge 80 ]]; then
         what='hell'
-    elif [[ "$current_temp" -gt 30 ]]; then
+    elif [[ "$current_temp" -ge 30 ]]; then
         what='hot'
-    elif [[ "$current_temp" -le 30 ]]; then
+    elif [[ "$current_temp" -ge 25 ]]; then
         what='hot-ish'
-    elif [[ "$current_temp" -le 25 ]]; then
+    elif [[ "$current_temp" -ge 20 ]]; then
         what='warm'
-    elif [[ "$current_temp" -le 20 ]]; then
+    elif [[ "$current_temp" -ge 13 ]]; then
         what='nice'
-    elif [[ "$current_temp" -le 13 ]]; then
+    elif [[ "$current_temp" -ge 7 ]]; then
         what='cold-ish'
-    elif [[ "$current_temp" -le 7 ]]; then
+    elif [[ "$current_temp" -ge 0 ]]; then
         what='cold'
     else
         what='very cold'
     fi
 
+    echo | tee -a "$log_file"
     echo "It's "$what"" | tee -a "$log_file"
     echo "Today is: "$date"" | tee -a "$log_file"
     echo "The time is: "$time_now"" | tee -a "$log_file"
     echo "Current topside temperature is: "$current_temp"°C" | tee -a "$log_file"
     echo "With an estimated high of: "$max_temp"°C" | tee -a "$log_file"
     echo "The humidity is at: "$humidity"%" | tee -a "$log_file"
-    echo | tee -a "$log_file"
 }
 alias radio1='mpv http://stream.metacast.eu/radio1.opus'
 download() {
