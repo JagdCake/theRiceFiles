@@ -86,7 +86,7 @@ toggle_icons() {
     fi
 }
 weather() {
-    log_file=~/Desktop/weather_log
+    log_file=~/Documents/text_files/my_logs/weather_log
 
     time_now="$(date +%T)"
     date="$(date "+%d %b %Y")"
