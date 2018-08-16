@@ -2,7 +2,10 @@ source /usr/share/defaults/etc/profile
 alias start='xdg-open'
 
 ### My Places ###
-alias mywebdev='cd /home/jagdcake/Documents/web_dev'
+web_dev_dir=~/Documents/web_dev/
+alias mywebdev="cd ${web_dev_dir}"
+alias myclientprojects="cd ${web_dev_dir}2_client_projects/"
+alias mysites="cd ${web_dev_dir}3_my_sites/"
 alias myscripts="cd /home/jagdcake/Documents/my_github/shell_scripts"
 ### ###
 
