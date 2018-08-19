@@ -134,6 +134,17 @@ download() {
 synonyms_of() {
     trans "$1" | rg Synonyms:
 }
+show_percent_of() {
+    if [ $# -ne 2 ]; then
+        echo "Usage: show_percent_of [PERCENT] of [NUMBER (integer or float)]"
+    else
+        percent=$1
+        number=$2
+
+        result=$(echo "scale=2; $number * $percent / 100" | bc -l)
+        echo ""$percent"% of "$number" is "$result""
+    fi
+}
 ### ###
 
 ### Environment Variables ###
