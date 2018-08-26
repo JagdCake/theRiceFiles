@@ -27,9 +27,8 @@ Plug 'vim-ctrlspace/vim-ctrlspace'
 Plug 'wakatime/vim-wakatime'
 Plug 'pangloss/vim-javascript'
 Plug 'airblade/vim-gitgutter'
-Plug 'reedes/vim-wordy'
-Plug 'Chiel92/vim-autoformat'
-Plug 'w0rp/ale'
+Plug 'Chiel92/vim-autoformat' 
+Plug 'w0rp/ale' 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 call plug#end()
@@ -38,7 +37,7 @@ call plug#end()
 set nocompatible
 set hidden
 
-"commenting plugin config
+"commenting plugin config 
 filetype plugin on
 let g:NERDSpaceDelims = 1
 let g:NERDCommentEmptyLines = 1
@@ -81,7 +80,7 @@ let g:airline_theme='lucius'
 let g:one_allow_italics=1
 colorscheme one
 
-" theme Deep-Space
+" theme Deep-Space 
 " let g:deepspace_italics=1
 " colorscheme deep-space
 
