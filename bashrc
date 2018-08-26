@@ -151,7 +151,7 @@ show_percent_of() {
 # Overwritten by 'pureline'
 # export PS1="\[\e[01;34m\]JC\[\e[0m\]\[\e[2;16m\]\w$\[\e[0m\] "
 
-export PATH="$PATH:/home/jagdcake/.yarn/bin"
+export PATH="$PATH:/home/jagdcake/.yarn/bin:/home/jagdcake/.local/bin"
 export GOPATH=$HOME/Documents/go
 ### ###
 
