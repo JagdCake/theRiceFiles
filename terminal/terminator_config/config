@@ -99,27 +99,15 @@
       maximised = False
       order = 0
       parent = ""
-      position = 525:25
-      size = 858, 1024
+      position = 525:0
+      size = 858, 200
       title = glances
       type = Window
-    [[[child1]]]
-      order = 0
-      parent = child0
-      position = 785
-      ratio = 0.770363101079
-      type = VPaned
-    [[[terminal2]]]
-      order = 0
-      parent = child1
-      profile = transparent
-      type = Terminal
-      uuid = e54eac92-7df8-458d-a866-4d6b8b3bb55b
-    [[[terminal3]]]
+    [[[terminal1]]]
       command = ranger && bash || bash
       directory = /mnt/hdd/
-      order = 1
-      parent = child1
+      order = 0
+      parent = child0
       profile = movie
       type = Terminal
       uuid = 55ca621d-12f8-4cd7-9ae1-20acaf5c0fea
