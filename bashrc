@@ -38,26 +38,6 @@ check_logs_for() {
 }
 ### ###
 
-### Front-end automation ###
-build_for_firebase() {
-    firebase init &&
-
-    html-minifier --input-dir ./ --output-dir public/ --file-ext html --case-sensitive --collapse-whitespace --remove-comments --minify-css &&
-
-    cp -r js/ images/ public/ &&
-
-    terser public/js/all.js -o /public/js/all.min.js --compress --mangle &&
-
-    svgo -f public/images/ &&
-
-    optipng -o5 public/images/*.png &&
-
-    # copy over 404 page and favicon
-
-    echo 'Use the all.min.js file instead of all.js'
-}
-### ###
-
 ### Neovim ###
 alias codenvim='terminator -l neovim'
 readnvim() {
