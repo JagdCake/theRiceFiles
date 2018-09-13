@@ -63,12 +63,12 @@
       title = reading
       type = Window
     [[[terminal1]]]
-      command = nvim -u ~/.config/nvim/reader.vim && bash || bash
+      command = nvim -u ~/.config/nvim/gold.vim && bash || bash
       directory = /home/jagdcake/Documents/
       order = 0
       parent = child0
-      profile = light_reading
-      title = light-reading
+      profile = read_write
+      title = read-write
       type = Terminal
       uuid = e7beb5ed-bdc2-442b-80b2-1a116e621af6
   [[movie]]
