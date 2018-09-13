@@ -5,6 +5,7 @@ set linebreak
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'rakr/vim-two-firewatch'
 Plug 'wakatime/vim-wakatime'
+Plug 'w0rp/ale'
 Plug 'junegunn/goyo.vim'
 call plug#end()
 
