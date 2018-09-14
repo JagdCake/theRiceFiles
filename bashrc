@@ -103,8 +103,12 @@ weather() {
 }
 alias radio1='mpv http://stream.metacast.eu/radio1.opus'
 download() {
-    megadl --path=/mnt/hdd/ "$1" &&
-    spd-say -t female2 'Download complete!'
+    if [ $# -eq 1 ]; then
+        megadl --path=/mnt/hdd/ "$1" &&
+        spd-say -t female2 'Download complete!'
+    else
+        echo "Usage: download [link]"
+    fi
 }
 synonyms_of() {
     trans "$1" | rg Synonyms:
