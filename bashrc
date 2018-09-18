@@ -124,6 +124,11 @@ show_percent_of() {
         echo ""$percent"% of "$number" is "$result""
     fi
 }
+check_network() {
+    ip_address=$(ifconfig | rg -C 1 enp3s0 | rg -o -e 'addr:\d+.\d+.\d+.' | awk -F':' '{ print $2 }')
+
+    sudo nmap -sn "$ip_address"0/24
+}
 ### ###
 
 ### Environment Variables ###
