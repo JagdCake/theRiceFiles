@@ -137,5 +137,7 @@ check_network() {
 
 export PATH="$PATH:/home/jagdcake/.yarn/bin:/home/jagdcake/.local/bin"
 export GOPATH=$HOME/Documents/go
+# default 'cat' behaviour for 'bat', i.e. don't use a pager for 'bat'
+export BAT_PAGER='never'
 ### ###
 
