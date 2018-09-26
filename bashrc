@@ -103,9 +103,11 @@ weather() {
 }
 alias radio1='mpv http://stream.metacast.eu/radio1.opus'
 download() {
+    sound_effect='/usr/share/sounds/gnome/default/alerts/glass.ogg'
+
     if [ $# -eq 1 ]; then
         megadl --choose-files --path=/mnt/hdd/ "$1" &&
-        spd-say -t female2 'Download complete!'
+        paplay "$sound_effect"
     else
         echo "Usage: download [link]"
     fi
