@@ -23,6 +23,7 @@ alias check_websites="${scripts_dir}./check_websites.sh"
 alias generate_web_project="${scripts_dir}./generate_web_project.sh"
 alias notes="${scripts_dir}./take_notes.sh"
 alias backup="~/Documents/backup/./backup.sh"
+alias build_web_project="${scripts_dir}./build_web_project.sh"
 ### ###
 
 ### My Apps ###
