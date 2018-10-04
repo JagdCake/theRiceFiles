@@ -58,6 +58,11 @@ alias did="neovim +'normal G o' +'r!date' +'normal o- ' /home/jagdcake/Documents
 ### ###
 
 ### Misc. ###
+# show a human readable summary of the size(s) of files / folders and sort them from biggest to smallest 
+# use double quotes around the path to expand wildcards
+showfilesize() {
+   du -sh $1 | sort -hr 
+}
 toggle_icons() {
     status=$(gsettings get org.gnome.desktop.background show-desktop-icons)
     if [ $status == 'true' ]; then
