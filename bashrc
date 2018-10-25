@@ -26,7 +26,7 @@ alias build_web_project="${scripts_dir}./build_web_project.sh"
 ### ###
 
 ### My Apps ###
-alias movie_add='cd /home/jagdcake/Documents/my_github/node_scripts/generate_movie_html/ && node app.js'
+alias movie_add='cd /home/jagdcake/Documents/my_github/node_scripts/site.movies.generate_html/ && node app.js'
 check_logs_for() {
     server_name=''
     server_ip=''
