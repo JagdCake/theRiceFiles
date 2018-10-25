@@ -1,5 +1,4 @@
 source /usr/share/defaults/etc/profile
-source ~/Documents/my_github/pureline/pureline ~/.pureline.conf
 alias start='xdg-open'
 
 ### My Places ###
@@ -140,8 +139,7 @@ check_network() {
 ### ###
 
 ### Environment Variables ###
-# Overwritten by 'pureline'
-# export PS1="\[\e[01;34m\]JC\[\e[0m\]\[\e[2;16m\]\w$\[\e[0m\] "
+export PS1="\[\e[01;34m\]JC\[\e[0m\]\[\e[2;16m\]\w$\[\e[0m\] "
 
 export PATH="$PATH:/home/jagdcake/.yarn/bin:/home/jagdcake/.local/bin"
 export GOPATH=$HOME/Documents/go
