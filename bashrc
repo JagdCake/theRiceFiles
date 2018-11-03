@@ -53,7 +53,8 @@ rednvim() {
 ### ###
 
 ### Edit Files ###
-alias did="neovim +'normal G o' +'r!date' +'normal o- ' /home/jagdcake/Documents/text_files/did"
+# create local 'did' files
+alias did="neovim +'normal G o' +'r!date' +'normal o- ' ./did"
 ### ###
 
 ### Misc. ###
