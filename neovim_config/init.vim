@@ -8,6 +8,8 @@ set mps+=<:>
 set nostartofline
 " allows pasting yanked / deleted lines in a different application
 set clipboard=unnamedplus
+" preview substitutions
+set inccommand=nosplit
 hi clear SpellBad
 hi SpellBad cterm=underline,bold
 
