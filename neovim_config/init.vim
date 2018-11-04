@@ -33,6 +33,10 @@ Plug 'Chiel92/vim-autoformat'
 Plug 'w0rp/ale' 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'autozimu/LanguageClient-neovim', {
+    \ 'branch': 'next',
+    \ 'do': 'bash install.sh',
+    \ }
 call plug#end()
 
 "vim-ctrlspace config
