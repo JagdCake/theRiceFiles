@@ -38,6 +38,9 @@ Plug 'autozimu/LanguageClient-neovim', {
     \ 'do': 'bash install.sh',
     \ }
 call plug#end()
+let g:LanguageClient_serverCommands = {
+    \ 'javascript': ['~/.config/language_servers/node_modules/javascript-typescript-langserver/lib/language-server-stdio.js'],
+    \ }
 
 "vim-ctrlspace config
 set nocompatible
