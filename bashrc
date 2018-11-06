@@ -137,6 +137,42 @@ check_network() {
 
     sudo nmap -sn "$ip_address"0/24
 }
+workout() {
+    day=$(date +%u)
+
+    if [[ $day -eq 1 || $day -eq 3 || $day -eq 5 ]]; then
+        choices=('Start off day workout' 'End workout' 'Show summary')
+        timew_tag='workout_off_day'
+    elif [[ $day -eq 2 || $day -eq 4 || $day -eq 7 ]]; then
+        choices=('Start workout' 'End workout' 'Show summary')
+        timew_tag='workout'
+    else
+        choices=('Show summary')
+    fi
+
+    choices+=('Quit')
+
+    select option in "${choices[@]}"; do
+       case "$option" in
+            'Start workout' )
+                timew start $timew_tag
+                break;;
+            'Start off day workout' )
+                timew start $timew_tag
+                break;;
+            'Show summary' )
+                timew summary year $timew_tag
+                break;;
+            'End workout' )
+                timew stop
+                break;;
+            "Quit" )
+                return;;
+        esac
+    done
+
+    workout
+}
 ### ###
 
 ### Environment Variables ###
