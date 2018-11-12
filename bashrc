@@ -11,23 +11,23 @@ alias myscripts="cd /home/jagdcake/Documents/my_github/shell_scripts"
 
 ### My Scripts ###
 scripts_dir=~/Documents/my_github/shell_scripts/scripts/
-alias shutdown_or_what="${scripts_dir}./shut_down.sh"
+alias shutdownorwhat="${scripts_dir}./shut_down.sh"
 alias nightl="watch -n 3 ${scripts_dir}./night_light.sh &> /dev/null &"
 alias dsearch="${scripts_dir}./docsSearch.sh"
 alias recipes="${scripts_dir}./recipes.sh"
-alias weight_tracker="${scripts_dir}./weight_tracker.sh"
+alias weighttracker="${scripts_dir}./weight_tracker.sh"
 alias workspace="${scripts_dir}./workspace.sh"
 alias pomodoro="${scripts_dir}./pomodoro.sh"
-alias check_websites="${scripts_dir}./check_websites.sh"
-alias generate_web_project="${scripts_dir}./generate_web_project.sh"
+alias checkwebsites="${scripts_dir}./check_websites.sh"
+alias generatewebproject="${scripts_dir}./generate_web_project.sh"
 alias notes="${scripts_dir}./take_notes.sh"
 alias backup="~/Documents/backup/./backup.sh"
-alias build_web_project="${scripts_dir}./build_web_project.sh"
+alias buildwebproject="${scripts_dir}./build_web_project.sh"
 ### ###
 
 ### My Apps ###
-alias movie_add='cd /home/jagdcake/Documents/my_github/node_scripts/site.movies.generate_html/ && node app.js'
-check_logs_for() {
+alias movieadd='cd /home/jagdcake/Documents/my_github/node_scripts/site.movies.generate_html/ && node app.js'
+checklogsfor() {
     server_name=''
     server_ip=''
     logs_location=~/Documents/web_dev/9_logs/
@@ -63,7 +63,7 @@ alias did="neovim +'normal G o' +'r!date' +'normal o- ' ./did"
 showfilesize() {
    du -sh $1 | sort -hr 
 }
-toggle_icons() {
+toggleicons() {
     status=$(gsettings get org.gnome.desktop.background show-desktop-icons)
     if [ $status == 'true' ]; then
         gsettings set org.gnome.desktop.background show-desktop-icons false
@@ -118,10 +118,10 @@ download() {
         echo "Usage: download [link]"
     fi
 }
-synonyms_of() {
+synonymsof() {
     trans "$1" | rg Synonyms:
 }
-show_percent_of() {
+showpercentof() {
     if [ $# -ne 2 ]; then
         echo "Usage: show_percent_of [PERCENT] of [NUMBER (integer or float)]"
     else
@@ -132,7 +132,7 @@ show_percent_of() {
         echo ""$percent"% of "$number" is "$result""
     fi
 }
-check_network() {
+checknetwork() {
     ip_address=$(ifconfig | rg -C 1 enp3s0 | rg -o -e 'addr:\d+.\d+.\d+.' | awk -F':' '{ print $2 }')
 
     sudo nmap -sn "$ip_address"0/24
