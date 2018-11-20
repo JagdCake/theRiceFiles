@@ -23,7 +23,7 @@ Plug 'tyrannicaltoucan/vim-deep-space'
 Plug 'rakr/vim-two-firewatch'
 Plug 'mattn/emmet-vim'
 Plug 'nikvdp/ejs-syntax'
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+" Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'scrooloose/nerdcommenter'
 Plug 'vim-ctrlspace/vim-ctrlspace'
 Plug 'wakatime/vim-wakatime'
@@ -33,6 +33,7 @@ Plug 'Chiel92/vim-autoformat'
 Plug 'w0rp/ale' 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}
 call plug#end()
 
 "vim-ctrlspace config
@@ -44,8 +45,8 @@ filetype plugin on
 let g:NERDSpaceDelims = 1
 let g:NERDCommentEmptyLines = 1
 
-"autocompelete config
-let g:deoplete#enable_at_startup = 1
+"deoplete config
+" let g:deoplete#enable_at_startup = 1
 
 "functions
 "remove trailing whitespace from file
