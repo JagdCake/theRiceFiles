@@ -33,14 +33,7 @@ Plug 'Chiel92/vim-autoformat'
 Plug 'w0rp/ale' 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'autozimu/LanguageClient-neovim', {
-    \ 'branch': 'next',
-    \ 'do': 'bash install.sh',
-    \ }
 call plug#end()
-let g:LanguageClient_serverCommands = {
-    \ 'javascript': ['~/.config/language_servers/node_modules/javascript-typescript-langserver/lib/language-server-stdio.js'],
-    \ }
 
 "vim-ctrlspace config
 set nocompatible
