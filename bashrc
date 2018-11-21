@@ -1,5 +1,7 @@
 source /usr/share/defaults/etc/profile
 alias start='xdg-open'
+alias monitor='gio monitor'
+alias takeoutthetrash='gio trash --empty'
 
 ### My Places ###
 web_dev_dir=~/Documents/web_dev/
