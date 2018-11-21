@@ -26,7 +26,6 @@ Plug 'nikvdp/ejs-syntax'
 " Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'scrooloose/nerdcommenter'
 Plug 'vim-ctrlspace/vim-ctrlspace'
-Plug 'wakatime/vim-wakatime'
 Plug 'pangloss/vim-javascript'
 Plug 'airblade/vim-gitgutter'
 Plug 'Chiel92/vim-autoformat' 
