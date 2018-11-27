@@ -175,6 +175,25 @@ workout() {
 
     workout
 }
+learn() {
+    select option in "Start learning" "Stop learning" "Show summary" "Quit"; do
+       case "$option" in
+            'Start learning' )
+                timew start learn
+                break;;
+            'Stop learning' )
+                timew stop
+                break;;
+            'Show summary' )
+                timew summary year learn
+                break;;
+            "Quit" )
+                return;;
+        esac
+    done
+
+    learn
+}
 ### ###
 
 ### Environment Variables ###
