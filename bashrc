@@ -194,6 +194,25 @@ learn() {
 
     learn
 }
+work() {
+    select option in "Start working" "Stop working" "Show summary" "Quit"; do
+       case "$option" in
+            'Start working' )
+                timew start work
+                break;;
+            'Stop working' )
+                timew stop
+                break;;
+            'Show summary' )
+                timew summary year work
+                break;;
+            "Quit" )
+                return;;
+        esac
+    done
+
+    work
+}
 ### ###
 
 ### Environment Variables ###
