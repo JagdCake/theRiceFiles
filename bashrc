@@ -79,8 +79,8 @@ weather() {
     time_now="$(date +%T)"
     date="$(date "+%d %b %Y")"
     url='https://www.sinoptik.bg/vidin-bulgaria-100725905'
-    current_temp="$(curl -s "$url" | rg wfCurrentTemp | rg -o -e '\d{1,2}')"
-    max_temp="$(curl -s "$url" | rg 'Максимална температура' | head -n 1 | rg -o -e '\d{1,2}')"
+    current_temp="$(curl -s "$url" | rg wfCurrentTemp | rg -o -e '-?\d{1,2}')"
+    max_temp="$(curl -s "$url" | rg 'Максимална температура' | head -n 1 | rg -o -e '-?\d{1,2}')"
     humidity="$(curl -s "$url" | rg wfCurrentValue | rg -o -e '\d{1,3}%' | rg -o -e '\d{1,3}')"
 
     if [[ "$current_temp" -gt 30 && "$humidity" -ge 80 ]]; then
