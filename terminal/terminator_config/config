@@ -151,7 +151,7 @@
       uuid = 73bf7da1-6973-4510-b62e-9f892fc4a46d
     [[[terminal4]]]
       command = nvim && bash || bash
-      directory = /home/jagdcake/Documents/
+      directory = /home/jagdcake/Documents/editor.sessions/
       order = 0
       parent = child3
       profile = neovim
