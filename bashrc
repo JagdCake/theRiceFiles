@@ -25,6 +25,8 @@ alias generatewebproject="${scripts_dir}./generate_web_project.sh"
 alias notes="${scripts_dir}./take_notes.sh"
 alias backup="~/Documents/backup/./backup.sh"
 alias buildwebproject="${scripts_dir}./build_web_project.sh"
+alias learn="$scripts_dir/./track_time.sh learn"
+alias work="$scripts_dir/./track_time.sh work"
 ### ###
 
 ### My Apps ###
@@ -174,44 +176,6 @@ workout() {
     done
 
     workout
-}
-learn() {
-    select option in "Start learning" "Stop learning" "Show summary" "Quit"; do
-       case "$option" in
-            'Start learning' )
-                timew start learn
-                break;;
-            'Stop learning' )
-                timew stop
-                break;;
-            'Show summary' )
-                timew summary year learn
-                break;;
-            "Quit" )
-                return;;
-        esac
-    done
-
-    learn
-}
-work() {
-    select option in "Start working" "Stop working" "Show summary" "Quit"; do
-       case "$option" in
-            'Start working' )
-                timew start work
-                break;;
-            'Stop working' )
-                timew stop
-                break;;
-            'Show summary' )
-                timew summary year work
-                break;;
-            "Quit" )
-                return;;
-        esac
-    done
-
-    work
 }
 ### ###
 
