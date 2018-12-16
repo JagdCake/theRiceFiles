@@ -177,6 +177,31 @@ workout() {
 
     workout
 }
+remindme() {
+    # show all tasks added this week
+    task entry.after:today-7days description
+
+    tabs 4
+    printf "\nCommands for tracking time:\n"
+    printf "\tlearn\n"
+    printf "\tworkout\n"
+    printf "\twork\n"
+
+    printf "\nCommands to run at a certain time:\n"
+    printf "\tnightl — before watching a movie\n"
+    printf "\tmovieadd — after a movie\n"
+    printf "\tweighttracker — every Monday morning\n"
+    printf "\tpomodoro — while working\n"
+    printf "\tnotes — while learning\n"
+    printf "\tbackup — before going to bed\n"
+
+    printf "\nCommands I often forget about:\n"
+    printf "\tdid — to write down what I've done\n"
+    printf "\tudunits2 — for measurement conversion\n"
+
+    # reset tabs to standard interval (do I have to?)
+    tabs -8
+}
 ### ###
 
 ### Environment Variables ###
