@@ -142,6 +142,23 @@ checknetwork() {
 
     sudo nmap -sn "$ip_address"0/24
 }
+todo() {
+    option="$1"
+    input="$2"
+
+    if [ "$option" == 'show' ]; then
+       task project:dailies ls
+    elif [ "$option" == 'add' ]; then
+       task add "$input" project:dailies due:tomorrow
+    else
+        printf "Usage:\n"
+        printf "  todo [OPTION] [TASK (OPTIONAL)]\n\n"
+        printf "Options:\n"
+        printf "  add — adds a task\n\n"
+        printf "  show — displays all daily tasks\n\n"
+        printf "\n"
+    fi
+}
 remindme() {
     # show all tasks added this week
     task entry.after:today-7days description
