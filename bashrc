@@ -143,20 +143,19 @@ checknetwork() {
     sudo nmap -sn "$ip_address"0/24
 }
 todo() {
-    option="$1"
-    input="$2"
+    input="$1"
 
-    if [ "$option" == 'show' ]; then
+    if [ "$input" == 'show' ]; then
        task project:dailies ls
-    elif [ "$option" == 'add' ]; then
+    elif [ $# -eq 1 ]; then
        task add "$input" project:dailies due:tomorrow
     else
         printf "Usage:\n"
-        printf "  todo [OPTION] [TASK (OPTIONAL)]\n\n"
+        printf "  todo [TASK/OPTION]\n\n"
+        printf "Note:\n"
+        printf "  tasks need to be quoted\n\n"
         printf "Options:\n"
-        printf "  add — adds a task\n\n"
         printf "  show — displays all daily tasks\n\n"
-        printf "\n"
     fi
 }
 remindme() {
