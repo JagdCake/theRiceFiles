@@ -180,6 +180,9 @@ remindme() {
     printf "\tdid — to write down what I've done\n"
     printf "\tudunits2 — for measurement conversion\n"
 
+    printf "\nLast backup:\n"
+    printf "$(tail -n 3 ~/Documents/backup/log)\n"
+
     # reset tabs to standard interval (do I have to?)
     tabs -8
 }
