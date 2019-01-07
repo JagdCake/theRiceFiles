@@ -222,6 +222,16 @@
     scrollbar_position = hidden
     show_titlebar = False
     use_system_font = False
+  [[green]]
+    background_darkness = 1.0
+    background_type = transparent
+    cursor_blink = False
+    cursor_color = "#aaaaaa"
+    font = Hack 12
+    foreground_color = "#00cc00"
+    scrollbar_position = hidden
+    show_titlebar = False
+    use_system_font = False
   [[light_reading]]
     background_color = "#fffceb"
     cursor_blink = False
