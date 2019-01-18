@@ -2,6 +2,8 @@ source /usr/share/defaults/etc/profile
 alias start='xdg-open'
 alias monitor='gio monitor'
 alias takeoutthetrash='gio trash --empty'
+# copy piped command's output
+alias copy="xclip -selection clipboard"
 
 ### My Places ###
 web_dev_dir=~/Documents/web_dev/
