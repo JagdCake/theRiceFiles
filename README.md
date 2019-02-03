@@ -1,5 +1,6 @@
 # theRiceFiles
-Just some customization assets and config files.
+
+![alt tag](https://github.com/JagdCake/dotfiles.rice/blob/master/screenshots/screenshot_home.png)
 
 + **OS**: [Solus 3.9999](https://getsol.us/home/)
 + **DE**: [Budgie](https://github.com/solus-project/budgie-desktop)
