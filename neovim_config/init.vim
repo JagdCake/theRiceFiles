@@ -33,6 +33,7 @@ Plug 'w0rp/ale'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}
+Plug 'lumiliet/vim-twig'
 call plug#end()
 
 "vim-ctrlspace config
