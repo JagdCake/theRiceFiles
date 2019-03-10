@@ -60,8 +60,18 @@ rednvim() {
 ### ###
 
 ### Edit Files ###
-# create local 'did' files
-alias did="neovim +'normal G o' +'r!date' +'normal o- ' ./did"
+did() {
+    flag="$1"
+    # create / append to local did files by default
+    did_file='./did'
+
+    # append to the global did file
+    if [ "$flag" == '-g' ]; then
+        did_file=~/Documents/text_files/did
+    fi
+
+    neovim +'normal G o' +'r!date' +'normal o- ' "$did_file"
+}
 ### ###
 
 ### Misc. ###
