@@ -35,6 +35,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}
 Plug 'lumiliet/vim-twig'
 Plug 'leafgarland/typescript-vim'
+Plug 'simnalamburt/vim-mundo'
 call plug#end()
 
 "vim-ctrlspace config
@@ -60,6 +61,9 @@ function! s:check_back_space() abort
   let col = col('.') - 1
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
+
+"vim-mundo config
+nnoremap <F5> :MundoToggle<CR>
 
 "functions
 "remove trailing whitespace from file
