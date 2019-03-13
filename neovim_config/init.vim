@@ -12,6 +12,10 @@ set clipboard=unnamedplus
 set inccommand=nosplit
 hi clear SpellBad
 hi SpellBad cterm=underline,bold
+" enable persistent undo so that undo history persists across sessions
+set undofile
+"undodir is not really necessary for neovim
+set undodir=~/.config/nvim/undo
 
 "fixes YAML indentation issues
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
