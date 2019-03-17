@@ -68,6 +68,8 @@ endfunction
 
 "vim-mundo config
 nnoremap <F5> :MundoToggle<CR>
+let g:mundo_width = 25
+let g:mundo_preview_bottom = 1
 
 "functions
 "remove trailing whitespace from file
