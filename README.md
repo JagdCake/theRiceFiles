@@ -2,7 +2,7 @@
 
 ![alt tag](https://github.com/JagdCake/dotfiles.rice/blob/master/screenshots/screenshot_home.png)
 
-+ **OS**: [Solus 3.9999](https://getsol.us/home/)
++ **OS**: [Solus 4](https://getsol.us/home/)
 + **DE**: [Budgie](https://github.com/solus-project/budgie-desktop)
 + **Icons**: [Papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)
 + **Theme**: [Adapta-Nokto-Eta](https://github.com/adapta-project/adapta-gtk-theme)
