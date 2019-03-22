@@ -50,7 +50,7 @@
     [[[terminal1]]]
       order = 0
       parent = child0
-      profile = dark
+      profile = neon
       title = main
       type = Terminal
       uuid = 73bf7da1-6973-4510-b62e-9f892fc4a46d
