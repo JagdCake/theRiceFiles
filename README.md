@@ -1,11 +1,13 @@
 # theRiceFiles
 
-![alt tag](https://github.com/JagdCake/dotfiles.rice/blob/master/screenshots/screenshot_home.png)
+![alt tag](./screenshots/home_busy.png)
+![alt tag](./screenshots/home.png)
 
 + **OS**: [Solus 4](https://getsol.us/home/)
 + **DE**: [Budgie](https://github.com/solus-project/budgie-desktop)
-+ **Icons**: [Papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)
-+ **Theme**: [Adapta-Nokto-Eta](https://github.com/adapta-project/adapta-gtk-theme)
++ **Icons**: [la-capitaine-icon-theme](https://github.com/keeferrourke/la-capitaine-icon-theme)
++ **Theme**: [Plata-Noir-Compact](https://gitlab.com/tista500/plata-theme)
++ **Cursor**: from the [Yaru](https://github.com/ubuntu/yaru) theme
 ___
 + **Workspace wallpapers**: 
     + [Home](https://github.com/JagdCake/dotfiles.rice/blob/master/desktop_wallpapers/home.png)
