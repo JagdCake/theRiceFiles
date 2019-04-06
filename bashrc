@@ -33,7 +33,7 @@ alias work="$scripts_dir/./track_time.sh work"
 ### ###
 
 ### My Apps ###
-alias movieadd='cd /home/jagdcake/Documents/my_github/node_scripts/site.movies.generate_html/ && node app.js'
+alias movieadd="~/Documents/web_dev/3_my_sites/site.movies/bin/console server:run"
 checklogsfor() {
     server_name=''
     server_ip=''
