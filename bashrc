@@ -27,9 +27,6 @@ alias generatewebproject="${scripts_dir}./generate_web_project.sh"
 alias notes="${scripts_dir}./take_notes.sh"
 alias backup="~/Documents/backup/./backup.sh"
 alias buildwebproject="${scripts_dir}./build_web_project.sh"
-alias workout="$scripts_dir/./track_time.sh workout"
-alias learn="$scripts_dir/./track_time.sh learn"
-alias work="$scripts_dir/./track_time.sh work"
 ### ###
 
 ### My Apps ###
@@ -175,11 +172,6 @@ remindme() {
     task entry.after:today-7days description
 
     tabs 4
-    printf "\nCommands for tracking time:\n"
-    printf "\tlearn\n"
-    printf "\tworkout\n"
-    printf "\twork\n"
-
     printf "\nCommands to run at a certain time:\n"
     printf "\tnightl — before watching a movie\n"
     printf "\tmovieadd — after a movie\n"
