@@ -27,7 +27,6 @@ Plug 'tyrannicaltoucan/vim-deep-space'
 Plug 'rakr/vim-two-firewatch'
 Plug 'mattn/emmet-vim'
 Plug 'nikvdp/ejs-syntax'
-" Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'scrooloose/nerdcommenter'
 Plug 'vim-ctrlspace/vim-ctrlspace'
 Plug 'pangloss/vim-javascript'
@@ -50,9 +49,6 @@ set hidden
 filetype plugin on
 let g:NERDSpaceDelims = 1
 let g:NERDCommentEmptyLines = 1
-
-"deoplete config
-" let g:deoplete#enable_at_startup = 1
 
 "trigger coc completion
 inoremap <silent><expr> <TAB>
