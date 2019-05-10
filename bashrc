@@ -195,7 +195,7 @@ remindme() {
 ### Environment Variables ###
 export PS1="\[\e[01;34m\]JC\[\e[0m\]\[\e[2;16m\]\w$\[\e[0m\] "
 
-export PATH="$PATH:/home/jagdcake/.yarn/bin:/home/jagdcake/.local/bin"
+export PATH="$PATH:/home/jagdcake/.yarn/bin:/home/jagdcake/.local/bin:/home/jagdcake/.cargo/bin"
 export GOPATH=$HOME/Documents/go
 # default 'cat' behaviour for 'bat', i.e. don't use a pager for 'bat'
 export BAT_PAGER='never'
