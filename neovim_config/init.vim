@@ -39,6 +39,7 @@ Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}
 Plug 'lumiliet/vim-twig'
 Plug 'leafgarland/typescript-vim'
 Plug 'simnalamburt/vim-mundo'
+Plug 'rust-lang/rust.vim'
 call plug#end()
 
 "vim-ctrlspace config
