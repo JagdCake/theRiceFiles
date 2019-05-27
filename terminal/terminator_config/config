@@ -95,7 +95,7 @@
       profile = movie
       type = Terminal
       uuid = 05d6d169-5ff6-40e6-b58d-acfe7b470e6a
-  [[movie_ranger]]
+  [[hdd]]
     [[[child0]]]
       fullscreen = False
       last_active_term = 55ca621d-12f8-4cd7-9ae1-20acaf5c0fea
@@ -105,10 +105,9 @@
       parent = ""
       position = 525:0
       size = 858, 200
-      title = glances
+      title = hdd
       type = Window
     [[[terminal1]]]
-      command = ranger && bash || bash
       directory = /mnt/hdd/
       order = 0
       parent = child0
