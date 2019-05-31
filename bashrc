@@ -15,7 +15,7 @@ alias myscripts="cd /home/jagdcake/Documents/my_github/shell_scripts"
 
 ### My Scripts ###
 scripts_dir=~/Documents/my_github/shell_scripts/scripts/
-alias shutdownorwhat="${scripts_dir}./shut_down.sh"
+alias sow=$HOME/Documents/go/bin/./script.shutdown-or-reboot
 alias nightl="watch -n 3 ${scripts_dir}./night_light.sh &> /dev/null &"
 alias dsearch="${scripts_dir}./docsSearch.sh"
 alias recipes="${scripts_dir}./recipes.sh"
