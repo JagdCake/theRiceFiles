@@ -75,6 +75,11 @@ fun! TrimWhitespace()
     %s/\s\+$//g
 endfun
 command! TrimWhitespace call TrimWhitespace()
+"sort TODO file by moving completed items (marked with X) to the bottom
+fun! SortTodo()
+    %sort /X/
+endfun
+command! SortTodo call SortTodo()
 
 "==================
 "theme 'One' config
