@@ -41,6 +41,7 @@ Plug 'leafgarland/typescript-vim'
 Plug 'simnalamburt/vim-mundo'
 Plug 'rust-lang/rust.vim'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'neovimhaskell/haskell-vim'
 call plug#end()
 
 "vim-ctrlspace config
