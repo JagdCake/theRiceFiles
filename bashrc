@@ -190,6 +190,15 @@ remindme() {
     # reset tabs to standard interval (do I have to?)
     tabs -8
 }
+ftoc() {
+    udunits2 -H "${1} fahrenheit" -W celsius
+}
+ptokg() {
+    udunits2 -H "${1} pounds" -W kilograms
+}
+fttom() {
+    udunits2 -H "${1} feet" -W meters
+}
 ### ###
 
 ### Environment Variables ###
