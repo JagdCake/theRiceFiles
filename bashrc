@@ -199,6 +199,9 @@ ptokg() {
 fttom() {
     udunits2 -H "${1} feet" -W meters
 }
+suomitoeng() {
+    trans -no-auto -from suomi "$1"
+}
 ### ###
 
 ### Environment Variables ###
