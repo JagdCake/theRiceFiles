@@ -69,6 +69,11 @@ did() {
 
     neovim +'normal G o' +'r!date' +'normal o- ' "$did_file"
 }
+learned() {
+    fact_file=~/Documents/text_files/general-knowledge
+
+    neovim +'normal G o' +'r!date' +'normal o- ' "$fact_file"
+}
 ### ###
 
 ### Misc. ###
@@ -183,6 +188,7 @@ remindme() {
     printf "\nCommands I often forget about:\n"
     printf "\tdid — to write down what I've done\n"
     printf "\tudunits2 — for measurement conversion\n"
+    printf "\tlearned — write down random facts\n"
 
     printf "\nLast backup:\n"
     printf "$(tail -n 3 ~/Documents/backup/log)\n"
