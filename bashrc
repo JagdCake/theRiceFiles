@@ -125,6 +125,8 @@ weather() {
     echo "Current topside temperature is: "$current_temp"°C" | tee -a "$log_file"
     echo "With an estimated high of: "$max_temp"°C" | tee -a "$log_file"
     echo "The humidity is at: "$humidity"%" | tee -a "$log_file"
+
+    psql -d weather -c "INSERT INTO readings VALUES (DEFAULT, '$what', '$date', '$time_now', $current_temp, $max_temp, $humidity)" > /dev/null
 }
 alias radio1='mpv http://stream.metacast.eu/radio1.opus'
 download() {
