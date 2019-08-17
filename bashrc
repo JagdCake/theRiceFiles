@@ -91,8 +91,6 @@ toggleicons() {
     fi
 }
 weather() {
-    log_file=~/Documents/text_files/my_logs/weather_log
-
     time_now="$(date +%T)"
     date="$(date "+%d %b %Y")"
     url='https://www.sinoptik.bg/vidin-bulgaria-100725905'
@@ -118,13 +116,12 @@ weather() {
         what='very cold'
     fi
 
-    echo | tee -a "$log_file"
-    echo "It's "$what"" | tee -a "$log_file"
-    echo "Today is: "$date"" | tee -a "$log_file"
-    echo "The time is: "$time_now"" | tee -a "$log_file"
-    echo "Current topside temperature is: "$current_temp"°C" | tee -a "$log_file"
-    echo "With an estimated high of: "$max_temp"°C" | tee -a "$log_file"
-    echo "The humidity is at: "$humidity"%" | tee -a "$log_file"
+    echo "It's $what"
+    echo "Today is: $date"
+    echo "The time is: $time_now"
+    echo "Current topside temperature is: $current_temp°C"
+    echo "With an estimated high of: $max_temp°C"
+    echo "The humidity is at: $humidity%"
 
     psql -d weather -c "INSERT INTO readings VALUES (DEFAULT, '$what', '$date', '$time_now', $current_temp, $max_temp, $humidity)" > /dev/null
 }
