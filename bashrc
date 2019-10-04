@@ -77,10 +77,9 @@ learned() {
 ### ###
 
 ### Misc. ###
-# show a human readable summary of the size(s) of files / folders and sort them from biggest to smallest 
-# use double quotes around the path to expand wildcards
+# show a human readable summary of the size of a file / folder
 showfilesize() {
-   du -sh $1 | sort -hr 
+   du -sh "$1" | sort -hr | awk '{ print $1 }'
 }
 toggleicons() {
     status=$(gsettings get org.gnome.desktop.background show-desktop-icons)
