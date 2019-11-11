@@ -38,15 +38,6 @@ alias buildwebproject="${scripts_dir}./build_web_project.sh"
 
 ### My Apps ###
 alias movieadd="~/Documents/web_dev/3_my_sites/site.movies/bin/console server:run"
-checklogsfor() {
-    server_name=''
-    server_ip=''
-    logs_location=~/Documents/web_dev/9_logs/
-    
-    #'[app name]-app'
-    app_name="$1"
-    ssh "$server_name"@"$server_ip" docker logs "$app_name" > "$logs_location"${app_name}_logs && less "$logs_location"${app_name}_logs
-}
 ### ###
 
 ### Edit Files ###
