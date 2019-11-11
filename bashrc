@@ -6,6 +6,7 @@ alias monitor='gio monitor'
 alias takeoutthetrash='gio trash --empty'
 # copy piped command's output
 alias copy="xclip -selection clipboard"
+alias nvim="$HOME/Downloads/./nvim.appimage"
 
 ### My Places ###
 web_dev_dir=~/Documents/web_dev/
