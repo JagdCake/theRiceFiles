@@ -7,6 +7,7 @@ alias takeoutthetrash='gio trash --empty'
 # copy piped command's output
 alias copy="xclip -selection clipboard"
 alias nvim="$HOME/Downloads/./nvim.appimage"
+alias work="tmuxp load work"
 
 editor() {
     "$HOME/Downloads/./nvim.appimage" "$@"
