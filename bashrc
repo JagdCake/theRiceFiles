@@ -37,6 +37,10 @@ alias backup="~/Documents/backup/./backup.sh"
 alias buildwebproject="${scripts_dir}./build_web_project.sh"
 ### ###
 
+### Git ###
+alias numofcommits="~/Downloads/./git-num.sh"
+### ###
+
 ### My Apps ###
 alias movieadd="~/Documents/web_dev/3_my_sites/site.movies/bin/console server:run"
 ### ###
