@@ -195,6 +195,25 @@ fttom() {
 suomitoeng() {
     trans -no-auto -from suomi "$1"
 }
+checklist() {
+    flag="$1"
+    new_list_name="$2"
+
+    list_dir=~/Documents/checklists/
+    # stop execution if above dir doesn't exist
+    cd "$list_dir" || { return 1; }
+
+    if [[ "$flag" == '-c' || "$flag" == '--create' ]]; then
+        # open neovim buffer containing the contents of the template file
+        editor '+r template.sh' '+set filetype=sh'
+    else
+        # canceling checklist selection reverses the cd and returns the same exit code that fzf returns when interrupted
+        checklist="$(exa *.sh | fzf)" || { cd ~- && return 130; }
+        ./"$checklist"
+    fi
+
+    cd ~- || return 1
+}
 ### ###
 
 ### Environment Variables ###
