@@ -1,0 +1,24 @@
+session_name: work
+windows:
+- focus: 'true'
+  layout: e39e,172x49,0,0{41x49,0,0,1,130x49,42,0[130x34,42,0,2,130x14,42,35{59x14,42,35,3,70x14,102,35,4}]}
+  options:
+    automatic-rename: 'off'
+  panes:
+  - shell_command:
+    - cd /home/jagdcake
+    - bash
+    - clear
+  - focus: 'true'
+    shell_command:
+    - cd /home/jagdcake/Documents/editor.sessions
+    - clear
+  - shell_command:
+    - cd /home/jagdcake/Documents
+    - bash
+    - clear
+  - shell_command:
+    - cd /home/jagdcake/Documents/web_dev
+    - bash
+    - clear
+  window_name: neovim
