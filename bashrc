@@ -33,6 +33,7 @@ alias pomodoro="${scripts_dir}./pomodoro.sh"
 alias checkwebsites="${scripts_dir}./check_websites.sh"
 alias generatewebproject="${scripts_dir}./generate_web_project.sh"
 alias notes="${scripts_dir}./take_notes.sh"
+alias budget="${scripts_dir}./budget.sh"
 alias backup="~/Documents/backup/./backup.sh"
 alias buildwebproject="${scripts_dir}./build_web_project.sh"
 ### ###
