@@ -26,7 +26,6 @@ Plug 'rakr/vim-one'
 Plug 'tyrannicaltoucan/vim-deep-space'
 Plug 'rakr/vim-two-firewatch'
 Plug 'mattn/emmet-vim'
-Plug 'nikvdp/ejs-syntax'
 Plug 'scrooloose/nerdcommenter'
 Plug 'vim-ctrlspace/vim-ctrlspace'
 Plug 'pangloss/vim-javascript'
@@ -39,7 +38,6 @@ Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}
 Plug 'lumiliet/vim-twig'
 Plug 'leafgarland/typescript-vim'
 Plug 'simnalamburt/vim-mundo'
-Plug 'rust-lang/rust.vim'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'neovimhaskell/haskell-vim'
 call plug#end()
