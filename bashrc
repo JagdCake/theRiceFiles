@@ -214,6 +214,17 @@ checklist() {
 
     cd ~- || return 1
 }
+hoursandminutestominutes() {
+    hours_and_minutes=$1
+
+    if [ $# -ne 1 ]; then
+        echo "Usage"
+        echo "hoursandminutestominutes [HOURS]:[MINUTES]"
+        return 0
+    fi
+
+    echo "$hours_and_minutes" | awk -F: '{ print ($1 * 60) + $2 }'
+}
 ### ###
 
 ### Environment Variables ###
