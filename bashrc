@@ -225,6 +225,29 @@ hoursandminutestominutes() {
 
     echo "$hours_and_minutes" | awk -F: '{ print ($1 * 60) + $2 }'
 }
+search() {
+    term="$1"
+    # the category parameter is optional
+    # if not provided, search all files in the cards dir
+    category="$2"
+
+    anki_cards="$HOME/Documents/text_files/anki-cards/$category"
+
+    if [ $# -lt 1 ]; then
+        echo "Usage:"
+        echo "search [SEARCH TERM] [CATEGORY (DEFAULT=ALL)]"
+        echo
+        echo "Categories:"
+        # hide file extensions
+        # should export Anki cards as plain text files
+        exa "$HOME/Documents/text_files/anki-cards/" | awk -F'.txt' '{ print $1 }'
+        return 0
+    fi
+
+    # search only the questions for the provided term
+    # all questions should end with "?"
+    rg -i "$term.*\?" "$anki_cards"*
+}
 ### ###
 
 ### Environment Variables ###
