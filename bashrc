@@ -1,4 +1,6 @@
 source /usr/share/defaults/etc/profile
+# use vi keybindings in bash
+set -o vi
 alias start='xdg-open'
 alias monitor='gio monitor'
 alias takeoutthetrash='gio trash --empty'
