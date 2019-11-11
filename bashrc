@@ -8,6 +8,10 @@ alias takeoutthetrash='gio trash --empty'
 alias copy="xclip -selection clipboard"
 alias nvim="$HOME/Downloads/./nvim.appimage"
 
+editor() {
+    "$HOME/Downloads/./nvim.appimage" "$@"
+}
+
 ### My Places ###
 web_dev_dir=~/Documents/web_dev/
 alias mywebdev="cd ${web_dev_dir}"
@@ -56,12 +60,12 @@ did() {
         did_file=~/Documents/text_files/did
     fi
 
-    neovim +'normal G o' +'r!date' +'normal o- ' "$did_file"
+    editor +'normal G o' +'r!date' +'normal o- ' "$did_file"
 }
 learned() {
     fact_file=~/Documents/text_files/general-knowledge
 
-    neovim +'normal G o' +'r!date' +'normal o- ' "$fact_file"
+    editor +'normal G o' +'r!date' +'normal o- ' "$fact_file"
 }
 ### ###
 
