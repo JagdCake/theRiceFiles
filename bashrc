@@ -198,6 +198,9 @@ fttom() {
 suomitoeng() {
     trans -no-auto -from suomi "$1"
 }
+engtosuomi() {
+    trans -no-auto -to suomi "$1"
+}
 checklist() {
     flag="$1"
     new_list_name="$2"
