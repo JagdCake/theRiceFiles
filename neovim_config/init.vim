@@ -28,7 +28,6 @@ Plug 'tyrannicaltoucan/vim-deep-space'
 Plug 'rakr/vim-two-firewatch'
 Plug 'mattn/emmet-vim'
 Plug 'scrooloose/nerdcommenter'
-Plug 'vim-ctrlspace/vim-ctrlspace'
 Plug 'pangloss/vim-javascript'
 Plug 'airblade/vim-gitgutter'
 Plug 'Chiel92/vim-autoformat'
@@ -43,11 +42,6 @@ Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'neovimhaskell/haskell-vim'
 Plug 'lervag/vimtex'
 call plug#end()
-
-"vim-ctrlspace config
-set nocompatible
-set hidden
-let g:CtrlSpaceDefaultMappingKey = "<C-space> "
 
 "commenting plugin config
 filetype plugin on
