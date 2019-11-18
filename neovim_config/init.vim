@@ -47,6 +47,7 @@ call plug#end()
 "vim-ctrlspace config
 set nocompatible
 set hidden
+let g:CtrlSpaceDefaultMappingKey = "<C-space> "
 
 "commenting plugin config
 filetype plugin on
