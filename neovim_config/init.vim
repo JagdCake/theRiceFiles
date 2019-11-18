@@ -16,6 +16,7 @@ hi SpellBad cterm=underline,bold
 set undofile
 "undodir is not really necessary for neovim
 set undodir=~/.config/nvim/undo
+set textwidth=72
 
 "fixes YAML indentation issues
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
