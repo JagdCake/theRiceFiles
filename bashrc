@@ -11,10 +11,6 @@ alias copy="xclip -selection clipboard"
 alias nvim="$HOME/Downloads/./nvim.appimage"
 alias work="tmuxp load work"
 
-editor() {
-    "$HOME/Downloads/./nvim.appimage" "$@"
-}
-
 ### My Places ###
 web_dev_dir=~/Documents/web_dev/
 alias mywebdev="cd ${web_dev_dir}"
@@ -59,12 +55,12 @@ did() {
         did_file=~/Documents/text_files/did
     fi
 
-    editor +'normal G o' +'r!date' +'normal o- ' "$did_file"
+    $EDITOR +'normal G o' +'r!date' +'normal o- ' "$did_file"
 }
 learned() {
     fact_file=~/Documents/text_files/general-knowledge
 
-    editor +'normal G o' +'r!date' +'normal o- ' "$fact_file"
+    $EDITOR +'normal G o' +'r!date' +'normal o- ' "$fact_file"
 }
 ### ###
 
@@ -211,7 +207,7 @@ checklist() {
 
     if [[ "$flag" == '-c' || "$flag" == '--create' ]]; then
         # open neovim buffer containing the contents of the template file
-        editor '+r template.sh' '+set filetype=sh'
+        $EDITOR '+r template.sh' '+set filetype=sh'
     else
         # canceling checklist selection reverses the cd and returns the same exit code that fzf returns when interrupted
         checklist="$(exa *.sh | fzf)" || { cd ~- && return 130; }
@@ -261,5 +257,6 @@ export PS1="\[\e[01;34m\]JC\[\e[0m\]\[\e[2;16m\]\w$\[\e[0m\] "
 
 export PATH="$PATH:/home/jagdcake/.yarn/bin:/home/jagdcake/.local/bin:/home/jagdcake/.cargo/bin"
 export GOPATH=$HOME/Documents/go
+export EDITOR="$HOME/Downloads/nvim.appimage"
 ### ###
 
