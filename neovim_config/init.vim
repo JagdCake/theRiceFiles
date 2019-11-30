@@ -17,6 +17,7 @@ set undofile
 "undodir is not really necessary for neovim
 set undodir=~/.config/nvim/undo
 set textwidth=72
+au BufRead *.ronn setlocal filetype=markdown
 
 "fixes YAML indentation issues
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
