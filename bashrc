@@ -276,6 +276,29 @@ search() {
     # all questions should end with "?"
     rg -i "$term.*\?" "$anki_cards"*
 }
+quickreminder() {
+    local countdown="$1"
+    local message="$2"
+
+    timed_notification() {
+        sleep "$countdown"m && notify-send -a 'reminder' "$message"
+    }
+
+    if [[ $# -ne 2 ]]; then
+        echo 'Usage:'
+        echo 'quickreminder [COUNTDOWN (value in minutes)] [MESSAGE]'
+        return 1
+    fi
+
+    if [[ ! "$countdown" =~ ^[0-9]+$ ]]; then
+        echo 'Error:'
+        echo 'The countdown value is not a number.'
+        return 1
+    fi
+
+    timed_notification &
+    disown -h %1
+}
 ### ###
 
 ### Environment Variables ###
