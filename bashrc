@@ -114,13 +114,39 @@ weather() {
 }
 alias radio1='mpv http://stream.metacast.eu/radio1.opus'
 download() {
-    sound_effect='/usr/share/sounds/gnome/default/alerts/glass.ogg'
+    local download_location='/mnt/hdd/downloaded_files/'
+    local download_link="$1"
+    local sound_effect='/usr/share/sounds/gnome/default/alerts/glass.ogg'
+
+    download_file() {
+        megadl --choose-files --path="$download_location" \
+        "$download_link"
+
+        if [[ $? -ne 0 ]]; then
+            # here sed relies on the template variable to replace it
+            # with the command to retry the download
+            # using pipes as regex separators because the link variable
+            # contains backslashes
+            sed -i -e "s|#RETRY_DOWNLOAD|download \'$download_link\'|" "$HOME/TODO"
+            notify-send -a 'download' 'Download failed!' "Command to retry download can be found in $HOME/TODO"
+            return 1
+        fi
+
+        return 0
+    }
 
     if [ $# -eq 1 ]; then
-        megadl --choose-files --path=/mnt/hdd/ "$1" &&
-        paplay "$sound_effect"
+        download_file &&
+        sed -i -e "s/download '.\+mega\.nz.\+'/#RETRY_DOWNLOAD/" "$HOME/TODO" &&
+        # the sound effect won't play if the above command returns exit
+        # code different than 0 and the notification won't be sent if
+        # the sound doesn't play need to make sure of that by using the
+        # AND operator
+        paplay "$sound_effect" &&
+        # show the name of the last modified file (the downloaded file)
+        notify-send -a 'download' 'Download complete!' "$(exa -1 --sort=modified -r $download_location | head -n 1)"
     else
-        echo "Usage: download [link]"
+        echo "Usage: download [LINK]"
     fi
 }
 synonymsof() {
