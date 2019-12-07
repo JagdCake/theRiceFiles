@@ -8,7 +8,6 @@ alias monitor='gio monitor'
 alias takeoutthetrash='gio trash --empty'
 # copy piped command's output
 alias copy="xclip -selection clipboard"
-alias nvim="$HOME/Downloads/./nvim.appimage"
 alias work="tmuxp load work"
 
 ### My Places ###
@@ -306,6 +305,6 @@ export PS1="\[\e[01;34m\]JC\[\e[0m\]\[\e[2;16m\]\w$\[\e[0m\] "
 
 export PATH="$PATH:/home/jagdcake/.yarn/bin:/home/jagdcake/.local/bin:/home/jagdcake/.cargo/bin:/home/jagdcake/.gem/ruby/2.6.0/bin"
 export GOPATH=$HOME/Documents/go
-export EDITOR="$HOME/Downloads/nvim.appimage"
+export EDITOR=nvim
 ### ###
 
