@@ -43,6 +43,7 @@ Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'neovimhaskell/haskell-vim'
 Plug 'lervag/vimtex'
 Plug 'JagdCake/tabline.vim'
+Plug 'ledger/vim-ledger'
 call plug#end()
 
 "commenting plugin config
