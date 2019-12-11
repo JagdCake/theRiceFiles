@@ -9,7 +9,7 @@ alias takeoutthetrash='gio trash --empty'
 # copy piped command's output
 alias copy="xclip -selection clipboard"
 alias work="tmuxp load work"
-alias budget="hledger add"
+alias budget="hledger-iadd"
 
 ### My Places ###
 web_dev_dir=~/Documents/web_dev/
