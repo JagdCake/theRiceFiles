@@ -36,7 +36,7 @@ alias buildwebproject="${scripts_dir}./build_web_project.sh"
 ### ###
 
 ### Git ###
-alias numofcommits="~/Downloads/./git-num.sh"
+alias numofcommits="~/Misc/./git-num.sh"
 ### ###
 
 ### My Apps ###
