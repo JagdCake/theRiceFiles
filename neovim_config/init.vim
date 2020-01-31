@@ -18,6 +18,7 @@ set undofile
 set undodir=~/.config/nvim/undo
 set textwidth=72
 au BufRead *.ronn setlocal filetype=markdown
+au BufRead TODO.diff setlocal textwidth=0
 
 "fixes YAML indentation issues
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
