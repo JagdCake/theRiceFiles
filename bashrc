@@ -10,6 +10,7 @@ alias takeoutthetrash='gio trash --empty'
 alias copy="xclip -selection clipboard"
 alias work="tmuxp load work"
 alias budget="hledger-iadd"
+alias rm="rm -I"
 
 ### My Places ###
 web_dev_dir=~/Documents/web_dev/
