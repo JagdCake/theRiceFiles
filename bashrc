@@ -299,6 +299,9 @@ quickreminder() {
     timed_notification &
     disown -h %1
 }
+pronounce() {
+    trans "$1" -speak -no-translate
+}
 ### ###
 
 ### Environment Variables ###
