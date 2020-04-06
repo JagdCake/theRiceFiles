@@ -302,6 +302,18 @@ quickreminder() {
 pronounce() {
     trans "$1" -speak -no-translate
 }
+create-react-app() {
+    local app_name="$1"
+
+    if [[ $# -ne 1 ]]; then
+        echo "Usage: create-react-app [APP NAME]"
+        return 1
+    fi
+
+    npx create-react-app "$app_name" \
+    --use-npm \
+    --template tailwindcss-typescript
+}
 ### ###
 
 ### Environment Variables ###
