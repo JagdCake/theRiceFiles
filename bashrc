@@ -13,7 +13,7 @@ alias budget="hledger-iadd"
 alias rm="rm -I"
 
 ### My Scripts ###
-scripts_dir=~/Documents/my_github/shell_scripts/scripts/
+scripts_dir=~/Documents/projects/bash/shell_scripts/scripts/
 alias sow=$HOME/Documents/go/bin/./script.shutdown-or-reboot
 alias nightl="watch -n 3 ${scripts_dir}./night_light.sh &> /dev/null &"
 alias dsearch="${scripts_dir}./docsSearch.sh"
