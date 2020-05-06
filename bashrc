@@ -16,16 +16,10 @@ alias rm="rm -I"
 scripts_dir=~/Documents/projects/bash/shell_scripts/scripts/
 alias sow=$HOME/Documents/go/bin/./script.shutdown-or-reboot
 alias nightl="watch -n 3 ${scripts_dir}./night_light.sh &> /dev/null &"
-alias dsearch="${scripts_dir}./docsSearch.sh"
 alias recipes="${scripts_dir}./recipes.sh"
 alias weighttracker="${scripts_dir}./weight_tracker.sh"
-alias workspace="${scripts_dir}./workspace.sh"
-alias pomodoro="${scripts_dir}./pomodoro.sh"
-alias checkwebsites="${scripts_dir}./check_websites.sh"
-alias generatewebproject="${scripts_dir}./generate_web_project.sh"
 alias notes="${scripts_dir}./take_notes.sh"
 alias backup="~/Documents/backup/./backup.sh"
-alias buildwebproject="${scripts_dir}./build_web_project.sh"
 ### ###
 
 ### Git ###
