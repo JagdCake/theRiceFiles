@@ -12,14 +12,6 @@ alias work="tmuxp load work"
 alias budget="hledger-iadd"
 alias rm="rm -I"
 
-### My Places ###
-web_dev_dir=~/Documents/web_dev/
-alias mywebdev="cd ${web_dev_dir}"
-alias myclientprojects="cd ${web_dev_dir}2_client_projects/"
-alias mysites="cd ${web_dev_dir}3_my_sites/"
-alias myscripts="cd /home/jagdcake/Documents/my_github/shell_scripts"
-### ###
-
 ### My Scripts ###
 scripts_dir=~/Documents/my_github/shell_scripts/scripts/
 alias sow=$HOME/Documents/go/bin/./script.shutdown-or-reboot
