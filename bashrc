@@ -23,10 +23,6 @@ alias backup="~/Documents/backup/./backup.sh"
 alias numofcommits="~/Misc/./git-num.sh"
 ### ###
 
-### My Apps ###
-alias movieadd="~/Documents/web_dev/3_my_sites/site.movies/bin/console server:run"
-### ###
-
 ### Edit Files ###
 did() {
     flag="$1"
@@ -297,6 +293,7 @@ create-react-app() {
     --use-npm \
     --template tailwindcss-typescript
 }
+alias movieadd="npm run --prefix ~/Documents/projects/web-dev/movie-form add-movie"
 ### ###
 
 ### Environment Variables ###
