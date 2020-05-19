@@ -18,7 +18,7 @@ windows:
     - bash
     - clear
   - shell_command:
-    - cd /home/jagdcake/Documents/web_dev
+    - cd /home/jagdcake/Documents/projects/web-dev/
     - bash
     - clear
   window_name: neovim
