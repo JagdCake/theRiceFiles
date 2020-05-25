@@ -3,6 +3,7 @@ set shiftwidth=4
 set expandtab
 set wrap
 set number
+set relativenumber
 set spell
 set mps+=<:>
 set nostartofline
