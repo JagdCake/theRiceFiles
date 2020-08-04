@@ -74,6 +74,9 @@ nnoremap <F5> :MundoToggle<CR>
 let g:mundo_width = 25
 let g:mundo_preview_bottom = 1
 
+"vimtex config
+let g:tex_flavor = 'latex'
+
 "functions
 "remove trailing whitespace from file
 fun! TrimWhitespace()
