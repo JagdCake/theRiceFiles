@@ -20,6 +20,9 @@ set undodir=~/.config/nvim/undo
 set textwidth=72
 au BufRead *.ronn setlocal filetype=markdown
 au BufRead *.diff setlocal textwidth=0
+"make pattern matching case insensitive, unless you type in uppercase
+"characters
+set ignorecase smartcase
 
 "fixes YAML indentation issues
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
