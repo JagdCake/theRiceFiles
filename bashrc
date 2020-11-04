@@ -300,7 +300,7 @@ alias movieadd="npm run --prefix ~/Documents/projects/web-dev/movie-form add-mov
 ### Environment Variables ###
 export PS1="\[\e[01;34m\]JC\[\e[0m\]\[\e[2;16m\]\w$\[\e[0m\] "
 
-export PATH="$PATH:/home/jagdcake/.yarn/bin:/home/jagdcake/.local/bin:/home/jagdcake/.cargo/bin:/home/jagdcake/.gem/ruby/2.6.0/bin"
+export PATH="$PATH:/home/jagdcake/.yarn/bin:/home/jagdcake/.local/bin:/home/jagdcake/.cargo/bin:/home/jagdcake/bin/"
 export GOPATH=$HOME/Documents/go
 export EDITOR=nvim
 export MPV_HOME=$HOME/.config/mpv
