@@ -1,4 +1,4 @@
-source /usr/share/defaults/etc/profile
+source /etc/profile.d/bash_completion.sh
 # enable z (https://github.com/rupa/z) to track directories
 source /home/jagdcake/Documents/code.github/z/z.sh
 # use vi keybindings in bash
