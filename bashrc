@@ -29,6 +29,7 @@ alias backup="~/Documents/backup/./backup.sh"
 alias numofcommits="~/Misc/./git-num.sh"
 alias gomplate=$HOME/Documents/go/bin/./gomplate
 alias up=$HOME/Documents/go/bin/./up
+alias frangipanni=$HOME/Documents/go/bin/./frangipanni
 ### ###
 
 ### Misc. ###
