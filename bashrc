@@ -15,6 +15,9 @@ alias work="tmuxp load work"
 alias budget="hledger-iadd"
 alias rm="rm -I"
 alias exa="exa --sort modified"
+# the date in ISO 8601 format, plus the timezone abbreviation and the
+# full weekday name
+alias isodate="date +'%Y-%m-%d %T %Z %A'"
 
 ### My Scripts ###
 scripts_dir=~/Documents/projects/bash/shell_scripts/scripts/
