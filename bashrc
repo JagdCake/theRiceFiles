@@ -14,7 +14,7 @@ alias copy="xclip -selection clipboard"
 alias work="tmuxp load work"
 alias budget="hledger-iadd"
 alias rm="rm -I"
-alias exa="exa -s modified"
+alias exa="exa --sort modified"
 
 ### My Scripts ###
 scripts_dir=~/Documents/projects/bash/shell_scripts/scripts/
