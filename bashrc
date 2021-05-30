@@ -22,7 +22,6 @@ alias isodate="date +'%Y-%m-%d %T %Z %A'"
 ### My Scripts ###
 scripts_dir=~/Documents/projects/bash/shell_scripts/scripts/
 alias sow=$HOME/Documents/go/bin/./script.shutdown-or-reboot
-alias nightl="watch -n 3 ${scripts_dir}./night_light.sh &> /dev/null &"
 alias recipes="${scripts_dir}./recipes.sh"
 alias weighttracker="${scripts_dir}./weight_tracker.sh"
 alias notes="${scripts_dir}./take_notes.sh"
