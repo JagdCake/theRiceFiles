@@ -27,6 +27,7 @@ alias weighttracker="${scripts_dir}./weight_tracker.sh"
 alias notes="${scripts_dir}./take_notes.sh"
 alias backup="~/Documents/backup/./backup.sh"
 alias numofcommits="~/Misc/./git-num.sh"
+alias gomplate=$HOME/Documents/go/bin/./gomplate
 ### ###
 
 ### Misc. ###
