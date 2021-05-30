@@ -1,4 +1,5 @@
 eval "$(starship init bash)"
+eval "$(gh completion -s bash)"
 source /etc/profile.d/bash_completion.sh
 # enable z (https://github.com/rupa/z) to track directories
 source /home/jagdcake/Documents/code.github/z/z.sh
